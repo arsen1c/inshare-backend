@@ -1,0 +1,18 @@
+<% if(typeof errors!= 'undefined') { %>
+<%    errors.forEach(function(error){ %>
+<p class="error"> <%= error.msg %></p>
+<%    })        %>
+<% } %>
+
+<% if(success_msg != '') { %>
+	<p class="success"><%= success_msg %> </p>
+<% } %>
+
+<% if(error_msg != '') { %>
+  <p><%= error_msg %> </p>
+<% } %> 
+
+<% if(error != '') { %>
+  <p><%= error %></p>
+<% } %>
+

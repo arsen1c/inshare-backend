@@ -1,0 +1,7 @@
+# FAQ's
+	1. Transporter Setup
+	=> https://stackoverflow.com/a/51981381/10457814
+	2. Enable Signup For Gmail (fix for nodemailer)
+	=> https://accounts.google.com/b/5/DisplayUnlockCaptcha
+	3. OAuth doesnt prompt for sign in account
+	=> https://stackoverflow.com/questions/47464988/auto-login-while-using-passport-google-oauth20/49455330#49455330
