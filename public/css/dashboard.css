@@ -81,7 +81,7 @@ main {
 
 
 
-.table {
+.main-table {
     overflow-x: auto;
     margin-top: 3rem;
     border-radius: 6px;
@@ -101,6 +101,10 @@ main {
 
 #all-devices td, #all-devices th {
   padding: 9px;
+}
+
+tr td {
+	min-width: 80px;
 }
 
 #all-devices td a {
@@ -143,4 +147,41 @@ main {
 .filename-td {
 	max-width: 200px;
 	overflow: hidden; 
+}
+
+
+.toggle {
+	display: none;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	cursor: pointer;
+}
+
+.block {
+	display: none;
+}
+
+@media (max-width: 520px) {
+	main {
+		padding: 5px;
+		/*margin: 0;*/
+	}
+
+	.toggle {
+		display: block;
+	}
+
+	.info-table {
+		overflow-x: auto; 
+	}
+
+	.navbar {
+		/*margin-top: 2rem;*/
+		/*display: none;*/
+		flex-direction: column;
+	}
+	.navbar a{
+		margin-top: 1rem;
+	}
 }

@@ -330,6 +330,19 @@ body {
   transform: translate(50%, 0);
 }
 
+
+.toggle {
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+
+.block {
+  display: none;
+}
+
 @media screen and (max-width: 900px) {
   :root {
     --container-width: 300px;
@@ -349,4 +362,24 @@ body {
   .email-container .filed {
     width: 300px;
   }
+}
+
+
+@media (max-width: 520px) {
+
+  .toggle {
+    display: block;
+  }
+
+  .navbar {
+    flex-direction: column;
+    padding-top: 3rem;
+    padding-right: 10rem;
+  }
+
+  .navlinks {
+    position: relative;
+    left: -12px;
+  }
+
 }

@@ -13,9 +13,14 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Dashboard</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="../css/dashboard.css">
+	<script src="../js/nav.js" defer></script>
 </head>
 <body>
+	<div class="toggle">
+		<i class="fas fa-bars fa-2x toggle"></i>
+	</div>
 	<nav class="navbar">
 		<a href="/" ><img class="logo" src="../img/logo.png" alt=""></a>
 		<a href="/users/logout" class="button">Logout</a>
@@ -37,8 +42,8 @@
 		</div>
 		<% if (user.files_created.length > 0) { %>
 			<div class="info-table">
-				<div class="table">
-	                <table id="all-devices">
+				<div class="main-table">
+	                <table id="all-devices" >
 	                    <thead>
 	                        <tr>
 	                            <th>Name</th>

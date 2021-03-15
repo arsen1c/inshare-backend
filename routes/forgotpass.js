@@ -68,7 +68,7 @@ router.post('/', (req, res) => {
 		}
 
 		sendTokenLink(user.email);
-		req.flash('success_msg', 'Rest link sent!');
+		req.flash('success_msg', 'Reset link sent!');
 		res.redirect('login');
 	})
 	// res.send('Password Reset Email Sent');

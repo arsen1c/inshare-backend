@@ -103,15 +103,21 @@ body .svg-bottom {
 }
 
 .auth{
+    /*text-align: center;*/
     color: #7d7d7d;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+    align-items: center;
 }
 
 .auth a {
-    color: #ff5454;
+    color: #696969;
     background: #fff;
-    padding: 0.65rem;
+    padding: 0.3rem 1rem;
     border-radius: 5px;
-    margin: 2rem auto auto 1rem;
+    margin-top: 1rem;
+    /*margin: 2rem auto auto 1rem;*/
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
 
@@ -143,19 +149,38 @@ body .svg-bottom {
 }
 
 .error {
-  color: #fc4753;
-}
-
-.success {
-  /*opacity: 0.8;*/
+position: relative;
+  color: black;
   margin: auto;
-  background: #a6ffbc;
+  background: #ff5757;
   padding: 0.4rem;
   width: 300px;
   text-align: center;
   border-radius: 15px;
   margin-top: 1rem;
   color: #fff;
+  border: 1px solid #e62727;
+}
+
+.success {
+position: relative;
+  /*opacity: 0.8;*/
+  margin: auto;
+  background: #46eb6f;
+  padding: 0.4rem;
+  width: 300px;
+  text-align: center;
+  border-radius: 15px;
+  margin-top: 1rem;
+  color: #fff;
+}
+
+.cross {
+    position: absolute;
+    top: -3px;
+    right: 6px;
+    cursor: pointer;
+    font-size: 1.1rem;
 }
 
 .container .wrapper .main-content button:hover {
