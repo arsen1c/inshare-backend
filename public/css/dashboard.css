@@ -150,7 +150,7 @@ tr td {
 	overflow: hidden; 
 }
 
-img {
+.empty {
 	width: 100%;
 	height: auto;
 }
@@ -205,7 +205,7 @@ img {
 
 	.navbar {
 		/*margin-top: 2rem;*/
-		/*display: none;*/
+		display: none;
 		flex-direction: column;
 	}
 	.navbar a{
