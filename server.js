@@ -68,6 +68,7 @@ app.use('/files', require('./routes/show'));
 app.use('/files/download', require('./routes/download'));
 app.use('/confirmation', require('./routes/confirmation'));
 app.use('/forgot', require('./routes/forgotpass'));
+app.use('/delete', require('./routes/delete'));
 
 // For Development Purpose
 app.use('/dev', require('./routes/dev') );

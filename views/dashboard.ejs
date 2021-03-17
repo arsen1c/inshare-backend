@@ -42,6 +42,7 @@
 		</div>
 		<% if (user.files_created.length > 0) { %>
 			<div class="info-table">
+				<input type="text" class="search-table" placeholder='Search for files..' title="Type in a file name">
 				<div class="main-table">
 	                <table id="all-devices" >
 	                    <thead>
@@ -68,7 +69,7 @@
 								    		<i class="fab fa-whatsapp"></i>
 								    	</a>
 								    </td>
-								    <td><a href="http://localhost:3000/files/<%= file.uuid %>" class="download-btn">Open</a> </td>
+								    <td><a class="download-btn delete" data-id=<%= file.uuid %>>Delete</a> </td>
 						  		</tr>
 						  	<% }) %>
 	                    </tbody>
