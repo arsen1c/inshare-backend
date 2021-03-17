@@ -205,7 +205,7 @@ tr td {
 
 	.navbar {
 		/*margin-top: 2rem;*/
-		display: none;
+		/*display: none;*/
 		flex-direction: column;
 	}
 	.navbar a{
