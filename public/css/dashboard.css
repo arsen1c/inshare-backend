@@ -150,6 +150,10 @@ tr td {
 	overflow: hidden; 
 }
 
+img {
+	width: 100%;
+	height: auto;
+}
 
 .toggle {
 	display: none;
