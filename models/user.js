@@ -22,7 +22,7 @@ const UserSchema = new mongoose.Schema({
 		type: Boolean,
 		default: false
 	},
-	googleId: {
+	gmail: {
 		type: String,
 	},
 	profilePic: {

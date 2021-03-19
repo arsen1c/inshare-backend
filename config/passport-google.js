@@ -26,7 +26,7 @@ module.exports = (passport) => {
 						new User({
 							username: profile.displayName,
 							isVerified: profile.emails[0].verified,
-							googleId: profile.id,
+							gmail: profile.emails[0].value,
 							profilePic: profile.photos[0].value 
 						}).save().then(newUser => {
 							done(null, newUser, { message: 'user created' });

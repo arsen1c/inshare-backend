@@ -37,7 +37,11 @@
 			</div>
 			<div class="details">
 				<div class="username"><%= user.username %></div>
-				<div class="email"><%= user.email %></div><br><br>
+				<% if (user.email !== undefined) {%>
+					<div class="email"><%= user.email %></div><br><br>
+				<% } else { %>
+					<div class="email"><%= user.gmail %></div><br><br>
+				<% } %>
 			</div>
 		</div>
 		<% if (user.files_created.length > 0) { %>
