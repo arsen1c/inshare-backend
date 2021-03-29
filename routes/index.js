@@ -16,6 +16,11 @@ router.get('/dashboard', ensureAuthenticated, (req, res) => {
 	});
 })
 
+// About page
+router.get('/about', (req, res) => {
+	res.render('about');
+})
+
 // Register page 
 router.get('/register', (req, res) => {
 	res.render('register');

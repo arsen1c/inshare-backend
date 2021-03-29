@@ -70,8 +70,4 @@ app.use('/confirmation', require('./routes/confirmation'));
 app.use('/forgot', require('./routes/forgotpass'));
 app.use('/delete', require('./routes/delete'));
 
-// For Development Purpose
-app.use('/dev', require('./routes/dev') );
-
-
 app.listen(PORT, console.log(`Listening on port ${PORT}.`));

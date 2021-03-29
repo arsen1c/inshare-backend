@@ -175,20 +175,6 @@ tr td {
 }
 
 
-.search-table {
-	background-image: url('../assets/search-solid.svg');
-	background-position: 5px 3px;
-	background-size: 25px;
-	background-repeat: no-repeat;
-	padding: 1rem 2.2rem;
-	width: 300px;
-	font-size: 1rem;
-	height: 30px;
-	border: 1px solid grey ;
-	/*box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;*/
-	outline: none;
-	border-radius: 5px;
-}
 @media (max-width: 520px) {
 	main {
 		padding: 5px;

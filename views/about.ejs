@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+	<title>About</title>
+	<link rel="stylesheet" href="">
+</head>
+<style>
+	
+	body {
+		background: #edf5fe;
+		margin: 0;
+		font-size: 1.4rem;
+		font-family: system-ui;
+		color: #6b6b6b;
+	}
+
+	.navbar	{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 5px 6rem 1.3rem 6rem;
+		box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+	}
+	
+	.logo {
+		width: 150px;
+		height: auto;  
+	}
+
+	.profile-pic,
+	.head {
+		text-align: center;
+	}
+	.head {
+		text-decoration: underline;
+	}
+	.pfp {
+		width: 130px;
+		height: auto;
+		border-radius: 50%;
+		position: relative;
+		top: -70px;
+	}
+
+	main {
+		box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+		background: #fffdfc;
+		max-width: 900px;
+		margin: auto;
+		margin-top: 5rem;
+		padding: 1rem 2rem 2rem 2rem;
+		border-radius: 10px;
+		position: relative;
+	}
+	.main-desc {
+		margin-top: -5rem;
+	}
+	h1 {
+		color: #525357;
+		text-transform: uppercase;
+	}	
+
+	footer .content {
+		text-align: center;
+	}
+	a {
+		text-decoration: none;
+		color: #6b6b6b;
+	}
+	.content i {
+		margin-left: 1rem;
+	}
+
+	.content a:nth-child(1):hover {
+		color: #45ed77;
+	}
+	.content a:nth-child(2):hover {
+		color: #ff3849;
+	}
+
+	@media (max-width: 520px) {
+		body {
+			font-size: 1rem;
+		}
+		.navbar {
+			padding: 0.6rem 1rem;
+		}
+		main {
+			margin-top: 4rem;
+			padding: 1rem;
+		}
+	}
+
+</style>
+<body onload="typeWriter()">
+	
+	<nav class="navbar">
+		<a href="/" draggable="false" ><img class="logo" src="../img/logo.png" alt="" ></a>
+	</nav>
+	<main>
+		<section class="aboutme-card">
+			<div class="profile-pic">
+				<img src="https://elitedamyth.xyz/assets/img/PFP.gif" class="pfp" alt="">
+			</div>
+			<div class="main-desc">
+				<h1 class="head">About me</h1>
+				<p class="para"></p>
+			</div>
+		</section>
+		<hr>
+		<footer>
+			<div class="content">
+				<a href="https://wa.me/919923956265"><i class="fab fa-whatsapp fa-2x"></i></a>
+				<a href="mailto:tysonbrick16@gmail.com"><i class="fas fa-envelope-open-text fa-2x"></i></a>
+			</div>
+		</footer>
+	</main>
+
+
+	<script defer>
+		let i = 0;
+		let speed = 1;
+		const txt = `Hello, World! My name is Aniket K and I am pursuing Bsc CS from Mumbai University and currently I am in my final year. \n\n` + `InShare is my final years project. It is a file sharing web application where people can upload files and share them with the world, hazel-free. Only the person who uploads the file, needs to be logged in and the receiver can download the files without signingup or logging in.\n` + `I had fun building this app, hope you enjoy the app. Happy inSharing :)`;
+
+		function typeWriter() {
+			if (i < txt.length) {
+				document.querySelector('.para').innerHTML += txt.charAt(i);
+				i++;
+				setTimeout(typeWriter, speed);
+			}
+		}
+	</script>
+</body>
+</html>
+

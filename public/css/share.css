@@ -43,6 +43,11 @@ body {
 .navlinks li{
   display: flex;
   list-style: none;
+  margin-left: 0.5rem;
+}
+
+.navlinks {
+  display: flex;
 }
 
 .link {
@@ -337,6 +342,7 @@ body {
   right: 10px;
   top: 10px;
   cursor: pointer;
+  color: #6b6b6b;
 }
 
 .block {
