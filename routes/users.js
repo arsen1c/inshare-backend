@@ -55,7 +55,7 @@ router.get('/register', (req, res) => {
 
 // Handler Register
 router.post('/register', (req, res) => {
-	console.log(req.body);
+	// console.log(req.body);
 	const { username, email, password, password2 } = req.body;
 
 	// Array of errors
@@ -101,7 +101,7 @@ router.post('/register', (req, res) => {
 					newUser.password = hash;
 					newUser.save()
 						.then(value => {
-							console.log('New user saved: ' + value);
+							// console.log('New user saved: ' + value);
 							req.flash('success_msg', 'Success! A verification link is sent to your email.');
 							res.redirect('/users/login');
 						})
