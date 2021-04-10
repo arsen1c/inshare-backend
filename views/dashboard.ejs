@@ -39,6 +39,7 @@
 				<div class="username"><%= user.username %></div>
 				<% if (user.email !== undefined) {%>
 					<div class="email"><%= user.email %></div><br><br>
+					<%= user.profilePic  %>
 				<% } else { %>
 					<div class="email"><%= user.gmail %></div><br><br>
 				<% } %>

@@ -16,9 +16,10 @@ module.exports = (passport) => {
 
 			},
 			(accessToken, refreshToken, profile, done) => {
-				console.log("Access Token: ", accessToken);
-				console.log("Profile: ", profile);
+				// console.log("Access Token: ", accessToken);
+				// console.log("Profile: ", profile);
 				User.findOne({ googleId: profile.id }).then(currentUser => {
+					//if we already have a record with the given profile ID
 					if (currentUser) {
 						done(null, currentUser);
 					} else {
@@ -27,7 +28,8 @@ module.exports = (passport) => {
 							username: profile.displayName,
 							isVerified: profile.emails[0].verified,
 							gmail: profile.emails[0].value,
-							profilePic: profile.photos[0].value 
+							profilePic: profile.photos[0].value,
+							googleId: profile.id 
 						}).save().then(newUser => {
 							done(null, newUser, { message: 'user created' });
 						})

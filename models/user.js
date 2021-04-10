@@ -25,6 +25,9 @@ const UserSchema = new mongoose.Schema({
 	gmail: {
 		type: String,
 	},
+	googleId: {
+		type: String,
+	},
 	profilePic: {
 		type:String
 	}
