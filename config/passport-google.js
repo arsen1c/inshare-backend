@@ -3,11 +3,10 @@ const GoogleStrategy = require('passport-google-oauth20').Strategy;
 const mongoose = require('mongoose');
 const User = require('../models/user');
 require('dotenv').config();
-
 module.exports = (passport) => {
 	passport.use(
 		new GoogleStrategy(
-			{ 
+			{
 				// passport callback function
 				// check if user already exists in our db with the given profile ID
 				clientID: process.env.OAUTH_CLIENT_ID,
@@ -29,7 +28,7 @@ module.exports = (passport) => {
 							isVerified: profile.emails[0].verified,
 							gmail: profile.emails[0].value,
 							profilePic: profile.photos[0].value,
-							googleId: profile.id 
+							googleId: profile.id
 						}).save().then(newUser => {
 							done(null, newUser, { message: 'user created' });
 						})
